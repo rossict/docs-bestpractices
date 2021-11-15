@@ -8,9 +8,11 @@ en_title: Data Purging
 
 ## What is Data Purging
 
-Data purging is a mechanism that permanently deletes inactive or obsolete records from the database. It should be considered for entities with evident high-growth rate, which can quickly achieve considerable volumes of data. All purging strategies must always align with business and (or) legal requirements.
+Data purging is the process of permanently removing obsolete data from a primary storage location when it is no longer required. It should be considered for entities with evident high-growth rate, which can quickly achieve considerable volumes of data. All purging strategies must always align with business and (or) legal requirements.
 
 Although this article focuses on purging data from the database’s entities, we can consider a similar approach for other types of storage, such as file systems, e-mails, and so on.
+
+The purging strategy presented here consists in deleting old records rather than moving the data to a permanent repository or non-relational database. However, due data relevancy, you may consider to move the data to a data warehouse or another non-relational database in which the data can be stored indefinitely or untill the legal storage time is met.
 
 ## Benefits
 
